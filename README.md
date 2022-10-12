@@ -1,7 +1,5 @@
 # Books Model and Repository Classes Design Recipe
 
-_Copy this recipe template to design and implement Model and Repository classes for a database table._
-
 ## 1. Design and create the Table
 
 ```
