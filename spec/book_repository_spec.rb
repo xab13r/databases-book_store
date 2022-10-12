@@ -11,19 +11,19 @@ RSpec.describe BookRepository do
       reset_books_table
     end
 
-    it "returns a list of books" do
+    it "returns a list of all books in the database" do
         repo = BookRepository.new
         books = repo.all
+
         expect(books.length).to eq 5
 
-        expect(books[0].id).to eq '1'
+        expect(books[0].id).to eq "1"
         expect(books[0].title).to eq "Nineteen Eighty-Four"
         expect(books[0].author_name).to eq "George Orwell"
 
-        expect(books[1].id).to eq '2'
+        expect(books[1].id).to eq "2"
         expect(books[1].title).to eq "Mrs Dalloway"
         expect(books[1].author_name).to eq "Virginia Woolf"
-
     end
 
 end
